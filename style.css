@@ -1,0 +1,148 @@
+body {
+    font-family: "Quicksand", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #6a6fd5 100%);
+  }
+  
+  .content {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+  }
+  
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    height: 100vh;
+  }
+  
+  .canvas {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    background-color: white;
+  }
+  
+  .board:hover {
+    cursor: crosshair;
+  }
+  
+  .settings {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    outline: none;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.4em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  #reset:hover {
+    background-color: rgba(106, 111, 213, 0.6);
+    color: white;
+  }
+  
+  
+  input {
+    width: 60px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.75);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.1s;
+    transition: opacity 0.1s;
+    border-radius: 8px;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #6a6fd5;
+    border-radius: 8px;
+    cursor: ew-resize;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #6a6fd5;
+    border-radius: 8px;
+    cursor: ew-resize;
+  }
+  
+  #color{
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    width:100%;
+    height:42px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+  }
+  
+  #color:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  #color::-webkit-color-swatch-wrapper {
+      padding: 0;
+    outline: none;
+    padding: 4px 8px;
+  }
+  
+  #color::-webkit-color-swatch {
+      border: none;
+    outline: none;
+  }
