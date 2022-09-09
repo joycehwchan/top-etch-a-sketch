@@ -1,18 +1,28 @@
 body {
-    font-family: "Quicksand", sans-serif;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-color: #8bc6ec;
-    background-image: linear-gradient(135deg, #8bc6ec 0%, #6a6fd5 100%);
-  }
-  
-  .content {
-    padding-top: 10%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #6a6fd5 100%);
+}
+
+.title{
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+  .main {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    min-height: 80vh;
+    min-width: 50%;
     gap: 4%;
   }
   
@@ -51,21 +61,19 @@ body {
   }
   
   button {
-    cursor: pointer;
     font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
     outline: none;
+    border-radius: 8px;
     border: 1px solid white;
+    text-transform: uppercase;
+    transition: all 0.2s;
     background-color: rgba(255, 255, 255, 0.6);
     padding: 0.4em 1.2em;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.2rem;
-    text-align: center;
-    transition: all 0.2s;
   }
   
   button:hover {
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.9);
   }
   
@@ -145,4 +153,10 @@ body {
   #color::-webkit-color-swatch {
       border: none;
     outline: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px;
   }
