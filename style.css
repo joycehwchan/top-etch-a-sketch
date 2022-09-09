@@ -160,3 +160,32 @@ body {
     font-weight: 600;
     margin: 20px;
   }
+
+/* footer */
+footer {
+  font-size: 0.8rem;
+  margin: 28px 0 12px;
+  text-decoration: none;
+}
+
+footer a,
+footer a:visited {
+  color: black;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+
+.fa-github {
+  color: black;
+  position: static;
+  transition: 0.4s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: scale(1.4) rotate(360deg);
+}
